@@ -1,17 +1,13 @@
 package com.anton;
 
-import com.anton.Main;
-import org.junit.jupiter.api.Test;
 
+import org.junit.jupiter.api.Test;
 import java.io.*;
 import java.util.Arrays;
 import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class TestMain {
-
     @Test
     void testReadItemsFromFile() throws IOException {
         String fileName = "testFile.txt";
@@ -44,23 +40,18 @@ public class TestMain {
 
         assertEquals(expected, actual);
     }
-
     @Test
     void testProcessNumbersEvenNumbers() {
         List<Integer> input = Arrays.asList(1, 7, 3, 5);
-        List<Integer> expected = Arrays.asList();
-
+        List<Integer> expected = List.of();
         List<Integer> actual = Main.processNumbers(input);
-
         assertEquals(expected, actual);
     }
     @Test
     void testProcessNumbersEvenNumbers1() {
         List<Integer> input = Arrays.asList(1, 8, 3, 5);
-        List<Integer> expected = Arrays.asList(8);
-
+        List<Integer> expected = List.of(8);
         List<Integer> actual = Main.processNumbers(input);
-
         assertEquals(expected, actual);
     }
     private void createTestFile(String fileName, String content) throws IOException {
