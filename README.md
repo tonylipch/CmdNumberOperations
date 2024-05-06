@@ -26,7 +26,7 @@
 
 <ul>
 
-    <li><strong>Překlad kódu:</strong>
+  <li><strong>Překlad kódu:</strong>
         <ul>
             <li>Přejděte do adresáře s kódem (<code>cd adresář-s-kódem</code>).</li>
             <li> Udelejte mvn clea pomocí příkazu mvn clean package.</li>
@@ -34,7 +34,7 @@
         </ul>
     </li>
 
-    <li><strong>Spuštění programu:</strong>
+  <li><strong>Spuštění programu:</strong>
         <ul>
             <li>Spusťte program s příslušnými argumenty:
                 <pre><code>-jar Numbers-jar-with-dependencies.jar [Tady můžete zadat počet čisel nebo soubor]</code></pre>
