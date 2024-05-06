@@ -87,7 +87,7 @@
 <h3>-jar Numbers-jar-with-dependencies.jar 3<h3>
 <h4>Zdaejte jaky kolív 3 čisla  třeba (2 3 4). Program vypiše [3]
 
-<h2>Podrobny testy programy byli napsany v testů</h2>
+<h2>Podrobny testy programy byli napsany v Junit testů</h2>
 
 
 
