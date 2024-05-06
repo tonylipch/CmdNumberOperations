@@ -84,12 +84,10 @@
 
 <h2>Příklady použití</h2>
 
-<ol>
-    <li><strong>Načtení čísel z konzole:</strong>
-        <pre><code>java Main 5</code></pre>
-    </li>
+<h3>-jar Numbers-jar-with-dependencies.jar 3<h3>
+<h4>Zdaejte jaky kolív 3 čisla  třeba (2 3 4). Program vypiše [3]
 
-    <li><strong>Načtení čísel ze souboru a uložení výstupu:</strong>
-        <pre><code>java Main input.txt output.txt</code></pre>
-    </li>
-</ol>
+<h2>Podrobny testy programy byli napsany v testů</h2>
+
+
+
