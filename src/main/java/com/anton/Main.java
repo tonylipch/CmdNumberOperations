@@ -51,7 +51,6 @@ public class Main {
             }
         } catch (IOException e) {
             e.printStackTrace();
-            
         }
     }
     static List<Integer> readItemsFromFile(String fileName) {
