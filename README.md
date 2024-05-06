@@ -88,6 +88,8 @@
 <h4>Zdaejte jaky kolív 3 čisla  třeba (2 3 4). Program vypiše [3]
 
 <code>-jar Numbers-jar-with-dependencies.jar test.txt out.txt</code>
+<br>
+<br>
 Program bude analizovat soubor test.txt pak napiše výsledek do souboru out.txt
 
 
