@@ -1,3 +1,5 @@
+package com.anton;
+
 import com.anton.Main;
 import org.junit.jupiter.api.Test;
 
@@ -9,7 +11,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class TestMain {
-
 
     @Test
     void testReadItemsFromFile() throws IOException {
@@ -23,8 +24,6 @@ public class TestMain {
 
         assertEquals(expected, actual);
     }
-
-
     @Test
     void testReadItemsFromConsole() {
         String input = "1\n2\n3\n4\n5\n";
@@ -36,7 +35,6 @@ public class TestMain {
 
         assertEquals(expected, actual);
     }
-
     @Test
     void testProcessNumbersOddNumbers() {
         List<Integer> input = Arrays.asList(1, 2, 3, 4, 5);
@@ -56,7 +54,6 @@ public class TestMain {
 
         assertEquals(expected, actual);
     }
-
     @Test
     void testProcessNumbersEvenNumbers1() {
         List<Integer> input = Arrays.asList(1, 8, 3, 5);
@@ -66,13 +63,6 @@ public class TestMain {
 
         assertEquals(expected, actual);
     }
-
-
-
-
-
-
-
     private void createTestFile(String fileName, String content) throws IOException {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
             writer.write(content);
@@ -81,5 +71,4 @@ public class TestMain {
             throw new IOException("Failed to create test file: " + e.getMessage());
         }
     }
-
 }

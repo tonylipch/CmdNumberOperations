@@ -1,21 +1,18 @@
 package com.anton;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
-
 import org.apache.commons.lang3.StringUtils;
 
 public class Main {
 
     public static void main(String[] args) {
+
         if (args.length < 1) {
-           System.out.println("Instructions");
+           System.out.println("Enter number of items or name of file with items");
            return;
         }
         String fileNameOrItemsNumber = args[0];
@@ -34,9 +31,30 @@ public class Main {
         //Result output
         List<Integer> result = processNumbers(items);
         System.out.println(result);
+
+        if(args.length>1){
+
+           String outputFileName = args[1];
+
+           writeItemsToFile(outputFileName, result);
+
+        }
+
     }
 
-  public static List<Integer> readItemsFromFile(String fileName) {
+
+    public static void writeItemsToFile(String fileName, List<Integer> items) {
+        try (FileWriter writer = new FileWriter(fileName)) {
+            for (Integer item : items) {
+                writer.write(item.toString());
+                writer.write(System.lineSeparator()); // Write each item on a new line
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            // Handle the exception according to your application's requirements
+        }
+    }
+  static List<Integer> readItemsFromFile(String fileName) {
 
        if (!new File(fileName).isFile()) {
             System.out.println(String.format("Wrong file '%s'", fileName));
@@ -66,10 +84,12 @@ public class Main {
     }
 
 
-   public static List<Integer> readItemsFromConsole(int numberOfItems) {
+   static List<Integer> readItemsFromConsole(int numberOfItems) {
        List<Integer> result = new ArrayList<Integer>();
 
         Scanner scanner = new Scanner(System.in);
+
+        System.out.print(String.format("Enter %d numbers: ",numberOfItems));
 
       for(int i = 0 ; i<numberOfItems; i++){
           try {
@@ -83,7 +103,7 @@ public class Main {
         return result;
     }
 
- public   static List<Integer> processNumbers(List<Integer> numbers){
+  static List<Integer> processNumbers(List<Integer> numbers){
         List<Integer> result = new ArrayList<>();
 
         int count = numbers.size();
