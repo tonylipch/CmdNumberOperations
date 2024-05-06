@@ -11,6 +11,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+
         if (args.length < 1) {
            System.out.println("Enter number of items or name of file with items");
            return;
