@@ -24,7 +24,7 @@
 
 <h2>Spuštění programu</h2>
 
-<ol>
+<ul>
 
     <li><strong>Překlad kódu:</strong>
         <ul>
@@ -41,7 +41,7 @@
             </li>
         </ul>
     </li>
-</ol>
+</ul>
 
 <h2>Argumenty programu</h2>
 
