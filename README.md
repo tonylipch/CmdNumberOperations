@@ -29,7 +29,7 @@
   <li><strong>Překlad kódu:</strong>
         <ul>
             <li>Přejděte do adresáře s kódem (<code>cd adresář-s-kódem</code>).</li>
-            <li> Udelejte mvn clea pomocí příkazu mvn clean package.</li>
+            <li> Udelejte mvn clean pomocí příkazu mvn clean package.</li>
             <li> Po generace jar file můžete soustit programu pomocí příkazu <h3><b>"-jar Numbers-jar-with-dependencies.jar"</li>
         </ul>
     </li>
