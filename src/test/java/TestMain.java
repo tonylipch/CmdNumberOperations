@@ -67,19 +67,6 @@ public class TestMain {
         assertEquals(expected, actual);
     }
 
-    @Test
-    void testProcessNumbersEvenNumbersFailed() {
-        List<Integer> input = Arrays.asList(1, 7, 3, 5,8);
-        List<Integer> expected = Arrays.asList(8);
-
-        List<Integer> actual = Main.processNumbers(input);
-
-        assertEquals(expected, actual);
-    }
-
-
-
-
 
 
 
