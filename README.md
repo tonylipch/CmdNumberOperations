@@ -10,7 +10,7 @@
   
 <ul>
   <ol>Přejděte do adresáře s kódem (cd adresář-s-kódem).
-  Udelejte mvn clea pomocí příkazu mvn clean package.</ol>
+<ol>Udelejte mvn clean pomocí příkazu mvn clean package.</ol>
   <ol>Po generace jar file můžete soustit programu pomocí příkazu <h3><b>"-jar Numbers-jar-with-dependencies.jar"</b></h3></ol>
 </ul>
 </h2>
