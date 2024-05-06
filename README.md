@@ -84,13 +84,18 @@
 
 <h2>Příklady použití</h2>
 
-<code>-jar Numbers-jar-with-dependencies.jar 3</code>
-<h4>Zdaejte jaky kolív 3 čisla  třeba (2 3 4). Program vypiše [3]
+<ul>
+  <li><code>-jar Numbers-jar-with-dependencies.jar 3</code></li>
+  <li><h4>Zdaejte jaky kolív 3 čisla  třeba (2 3 4). Program vypiše [3]</h4></li>
 
-<code>-jar Numbers-jar-with-dependencies.jar test.txt out.txt</code>
-<br>
-<br>
-Program bude analizovat soubor test.txt pak napiše výsledek do souboru out.txt
+</ul>
+
+<ul>
+ <li> <code>-jar Numbers-jar-with-dependencies.jar test.txt out.txt</code></li>
+
+  <li>Program bude analizovat soubor test.txt pak napiše výsledek do souboru out.txt</li>
+
+</ul>
 
 
 <h2>Podrobny testy programy byli napsany v Junit testů</h2>
